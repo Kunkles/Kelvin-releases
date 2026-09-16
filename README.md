@@ -1,18 +1,18 @@
-# CamMatch
+# Kelvin
 
 **A Mac app for matching white balance and EI across ARRI ALEXA cameras,
 then moving them together.** Match each camera by eye on its own colour
 wheel, link them, and a master wheel moves every linked camera at once
 while keeping the match you made.
 
-**[Download CamMatch](../../releases/latest/download/CamMatch.zip)** ·
+**[Download Kelvin](../../releases/latest/download/Kelvin.zip)** ·
 macOS 14 or later · free · [all releases](../../releases/latest)
 
 ---
 
 ## How it works
 
-CamMatch talks to each camera over the network, through the camera's Web
+Kelvin talks to each camera over the network, through the camera's Web
 Remote interface: the same one ARRI's browser remote uses. Add a camera
 by its IP address and it gets a card with its own wheel.
 
@@ -51,15 +51,15 @@ window fits itself to the cards.
 
 ## Installing
 
-Download **[CamMatch.zip](../../releases/latest/download/CamMatch.zip)**
-(that link always fetches the newest build), unzip it, drag **CamMatch**
+Download **[Kelvin.zip](../../releases/latest/download/Kelvin.zip)**
+(that link always fetches the newest build), unzip it, drag **Kelvin**
 to Applications and open it. The first time it looks for a camera, macOS
-asks whether CamMatch may find devices on your local network. Allow it,
-or CamMatch can't reach the cameras.
+asks whether Kelvin may find devices on your local network. Allow it,
+or Kelvin can't reach the cameras.
 
 The zip includes **README.txt**, a guide to every control.
 
-CamMatch is signed with a Developer ID certificate and notarised by
+Kelvin is signed with a Developer ID certificate and notarised by
 Apple, so it opens without warnings.
 
 ---
@@ -85,15 +85,24 @@ Apple, so it opens without warnings.
 
 ## Trademarks
 
-ARRI and ALEXA are trademarks of ARRI. CamMatch is not affiliated with
+ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
 or endorsed by ARRI.
 
 ---
 
 ## Changelog
 
-CamMatch matches white balance and EI across ARRI ALEXA cameras, then
-moves them together.
+Kelvin matches white balance and EI across ARRI ALEXA cameras, then
+moves them together. It was called CamMatch until 1.2.0.
+
+### 1.2.0 — 2026-09-16
+
+#### Changed
+- **The app is called Kelvin.** CamMatch sat too close to TCMatch, the
+  timecode app, for two apps that live on the same cart. Your cameras,
+  window size and Local Network permission carry over: the app keeps the
+  identity it has always had underneath. Downloads have moved with it,
+  to github.com/Kunkles/Kelvin-releases.
 
 ### 1.1.0 — 2026-09-15
 

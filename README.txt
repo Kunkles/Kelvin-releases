@@ -1,26 +1,26 @@
-CamMatch
+Kelvin
 ========
 
 Match white balance and EI across ARRI ALEXA cameras, then move them
 together.
 
-CamMatch shows a colour wheel for every camera. Match each camera by
+Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.0.0. Newest download:
-https://github.com/Kunkles/CamMatch-releases/releases/latest
+Version 1.2.0. Newest download:
+https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
 WALKTHROUGH
 -----------
 
-The first time CamMatch opens, a walkthrough points at each control in
+The first time Kelvin opens, a walkthrough points at each control in
 the window. It runs on two practice cameras, Practice A and Practice
 B, which aren't on the network, so nothing it shows can change a real
 camera. They're removed when the walkthrough ends, and your own
 cameras (hidden during it) come back. See it again any time from
-Help > CamMatch Walkthrough.
+Help > Kelvin Walkthrough.
 
 
 WHAT YOU NEED
@@ -28,23 +28,23 @@ WHAT YOU NEED
 
 - A Mac running macOS 14 (Sonoma) or later.
 - ARRI ALEXA cameras on the same network as the Mac, and each camera's
-  IP address (shown in the camera's network settings). CamMatch has
+  IP address (shown in the camera's network settings). Kelvin has
   been used with the ALEXA 35.
 
 
 INSTALLING
 ----------
 
-1. Unzip CamMatch.zip.
-2. Drag CamMatch into your Applications folder.
+1. Unzip Kelvin.zip.
+2. Drag Kelvin into your Applications folder.
 3. Open it.
 
-The first time CamMatch looks for a camera, macOS asks whether it may
-find devices on your local network. Click Allow. Without it, CamMatch
+The first time Kelvin looks for a camera, macOS asks whether it may
+find devices on your local network. Click Allow. Without it, Kelvin
 can't reach the cameras.
 
 If you clicked Don't Allow by mistake: System Settings > Privacy &
-Security > Local Network, and turn CamMatch on.
+Security > Local Network, and turn Kelvin on.
 
 
 IMPORTANT BEFORE A SHOOT
@@ -84,7 +84,7 @@ ADDING, RENAMING AND REMOVING CAMERAS
   on its card, and choose Remove Camera. Or select it in the sidebar
   and press Delete.
 
-CamMatch remembers your cameras, which ones are linked, and the card
+Kelvin remembers your cameras, which ones are linked, and the card
 size, between launches.
 
 
@@ -154,7 +154,7 @@ Each card has an EI slider underneath the TEMP and TINT readouts.
 - Or click a tick, or click the slider and use Left / Right to step one
   EI at a time.
 - "ES" next to the value means the camera is in Enhanced Sensitivity.
-- "not available" means CamMatch doesn't recognise this camera's EI
+- "not available" means Kelvin doesn't recognise this camera's EI
   list. EI is supported on the ALEXA 35 for now.
 
 The master card's EI slider moves every linked camera by the same
@@ -190,23 +190,23 @@ A camera stays red (offline)
   - Check the IP address against the camera's network settings.
   - Make sure the Mac and camera are on the same network.
   - Check Local Network permission: System Settings > Privacy &
-    Security > Local Network > CamMatch.
+    Security > Local Network > Kelvin.
 
 The wheel seems to fight you
   - Someone may be changing white balance on the camera itself.
-    CamMatch follows changes made on the camera, but never in the
+    Kelvin follows changes made on the camera, but never in the
     middle of your drag.
 
 EI shows "not available"
-  - The camera's EI list isn't one CamMatch recognises. EI is
+  - The camera's EI list isn't one Kelvin recognises. EI is
     supported on the ALEXA 35 for now; white balance still works.
 
 
 ABOUT
 -----
 
-CamMatch is free. It is signed with a Developer ID certificate and
+Kelvin is free. It is signed with a Developer ID certificate and
 notarised by Apple.
 
-ARRI and ALEXA are trademarks of ARRI. CamMatch is not affiliated with
+ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
 or endorsed by ARRI.
