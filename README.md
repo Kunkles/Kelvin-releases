@@ -83,6 +83,16 @@ Apple, so it opens without warnings.
 
 ---
 
+## Beer
+
+Made by a DIT who got tired of matching cameras through a browser. Kelvin
+is free and always will be. If it saved you a morning at the cart, and
+you feel like it, the next one's on you —
+[venmo.com/u/Ryan-Kunkleman-1](https://venmo.com/u/Ryan-Kunkleman-1).
+
+There's a code to point a phone at in the app too, at the end of the
+walkthrough and in Help › Buy Me a Beer.
+
 ## Trademarks
 
 ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
@@ -94,6 +104,30 @@ or endorsed by ARRI.
 
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
+
+### 1.2.1 — 2026-09-16
+
+#### Added
+- **Buy Me a Beer.** A code to point a phone at, at the end of the
+  walkthrough and in Help › Buy Me a Beer. Deliberately not a link:
+  Kelvin doesn't send anybody to a payment page.
+
+#### Changed
+- **The toolbar's zoom slider is gone.** The two magnifying glass
+  buttons, ⌘= and ⌘−, and dragging the window's edge already scale the
+  cards, and the slider was the widest thing in the toolbar for the
+  least use.
+- **Fine is a button with its name on it.** As a bare icon it was
+  indistinguishable from the plain buttons beside it, and an unlit
+  toggle gave no sign it could be switched on.
+
+#### Fixed
+- **No more resize on launch.** The window is restored at whatever size
+  it was last left, which is rarely what the cards need, and the first
+  fit animated that difference — measured from one saved frame, the
+  window slid through twelve sizes over about half a second. That fit
+  happens without animation now, so the window simply opens at the right
+  size. Fits you cause, like adding a camera, still animate.
 
 ### 1.2.0 — 2026-09-16
 
