@@ -95,6 +95,15 @@ or endorsed by ARRI.
 CamMatch matches white balance and EI across ARRI ALEXA cameras, then
 moves them together.
 
+### 1.1.0 — 2026-09-15
+
+#### Added
+- **A walkthrough.** The first launch dims the window and spotlights each
+  control in turn, with a card saying what it's for, the way Ringr's tour
+  does. It runs on two practice cameras that never touch the network and
+  are removed when it ends; your own cameras are hidden, not removed,
+  while it's open. It stays in Help › CamMatch Walkthrough.
+
 ### 1.0.0 — 2026-09-15
 
 The first release.

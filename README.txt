@@ -12,6 +12,17 @@ Version 1.0.0. Newest download:
 https://github.com/Kunkles/CamMatch-releases/releases/latest
 
 
+WALKTHROUGH
+-----------
+
+The first time CamMatch opens, a walkthrough points at each control in
+the window. It runs on two practice cameras, Practice A and Practice
+B, which aren't on the network, so nothing it shows can change a real
+camera. They're removed when the walkthrough ends, and your own
+cameras (hidden during it) come back. See it again any time from
+Help > CamMatch Walkthrough.
+
+
 WHAT YOU NEED
 -------------
 
