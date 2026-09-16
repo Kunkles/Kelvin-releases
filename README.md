@@ -105,6 +105,16 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.2.2 — 2026-09-16
+
+#### Changed
+- **A new window opens at its smallest size.** With no remembered
+  window, Kelvin used to open at a fixed 1400 × 880. It now opens with
+  every card at its minimum width, and that's also the default card size,
+  so the window doesn't open small and then grow. Card sizes you've
+  already set are kept, and a window you've used before still reopens
+  where you left it.
+
 ### 1.2.1 — 2026-09-16
 
 #### Added

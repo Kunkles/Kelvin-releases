@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.2.1. Newest download:
+Version 1.2.2. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
