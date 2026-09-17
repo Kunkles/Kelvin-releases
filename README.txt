@@ -62,7 +62,8 @@ THE WINDOW
   Sidebar       Your cameras: name, IP address, a status dot, current
                 colour temperature and tint, and a link button.
                 Type an IP address in the box at the bottom and press
-                Return (or +) to add a camera.
+                Return (or +) to add a camera. Double-click a camera's
+                IP address to change it.
 
   Master card   The lighter card on the left. It moves every linked
                 camera together.
@@ -187,7 +188,9 @@ TROUBLESHOOTING
 ---------------
 
 A camera stays red (offline)
-  - Check the IP address against the camera's network settings.
+  - Check the IP address against the camera's network settings. If
+    it's wrong, double-click it in the sidebar, fix it and press
+    Return.
   - Make sure the Mac and camera are on the same network.
   - Check Local Network permission: System Settings > Privacy &
     Security > Local Network > Kelvin.

@@ -14,7 +14,8 @@ macOS 14 or later · free · [all releases](../../releases/latest)
 
 Kelvin talks to each camera over the network, through the camera's Web
 Remote interface: the same one ARRI's browser remote uses. Add a camera
-by its IP address and it gets a card with its own wheel.
+by its IP address and it gets a card with its own wheel. If a camera's
+address changes, double-click it in the sidebar and type the new one.
 
 ### Match
 
