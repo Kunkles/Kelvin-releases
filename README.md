@@ -104,6 +104,14 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.2.4 — 2026-09-16
+
+#### Added
+- **Change a camera's address in the sidebar.** Double-click it, type the
+  new one and press Return; Escape cancels. The camera reconnects at the
+  new address and keeps its name, colour and link. An empty address, or
+  one another camera already has, is refused.
+
 ### 1.2.3 — 2026-09-16
 
 #### Changed

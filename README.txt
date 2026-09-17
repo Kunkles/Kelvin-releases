@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.2.3. Newest download:
+Version 1.2.4. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -80,6 +80,10 @@ ADDING, RENAMING AND REMOVING CAMERAS
 - Add: type the camera's IP address in the sidebar box and press
   Return.
 - Rename: click the name at the top of the camera's card and type.
+- Change the address: double-click the address under the camera's name
+  in the sidebar, type the new one, and press Return (Escape cancels).
+  The camera reconnects at the new address, keeping its name, colour
+  and link. An address another camera already has is refused.
 - Remove: right-click the camera in the sidebar, or use the (...) menu
   on its card, and choose Remove Camera. Or select it in the sidebar
   and press Delete.
