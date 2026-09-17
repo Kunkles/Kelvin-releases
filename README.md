@@ -43,9 +43,8 @@ camera by camera.
 
 ### Size
 
-The master and every camera card are the same size and scale together,
-from the toolbar, with ⌘= and ⌘−, or by dragging the window's edge. The
-window fits itself to the cards.
+The master and every camera card are the same size and scale together
+when you drag the window's edge. The window fits itself to the cards.
 
 ---
 
@@ -104,6 +103,14 @@ or endorsed by ARRI.
 
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
+
+### 1.2.3 — 2026-09-16
+
+#### Changed
+- **No zoom controls.** The magnifying glass buttons are gone from the
+  toolbar, and Bigger and Smaller Wheels from the Window menu. The cards
+  still scale by dragging the window's edge, and Fit Window to Wheels
+  (⌘0) still snaps the window back to them.
 
 ### 1.2.2 — 2026-09-16
 

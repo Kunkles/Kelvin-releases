@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.2.2. Newest download:
+Version 1.2.3. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -169,14 +169,10 @@ says "unlinked".
 SIZE
 ----
 
-All cards scale together:
-
-- The magnifying glass buttons in the toolbar.
-- Window > Bigger Wheels (Command =) and Smaller Wheels (Command -).
-- Dragging the window's edge. When you let go, the window fits itself
-  to the cards.
-- Window > Fit Window to Wheels (Command 0) snaps the window back to
-  the cards.
+All cards scale together when you drag the window's edge, the master
+included. When you let go, the window fits itself to the cards.
+Window > Fit Window to Wheels (Command 0) snaps the window back to the
+cards.
 
 The window can't be made smaller than the cards at their smallest.
 If there are more cameras than fit on the screen, the cards scroll
