@@ -3,6 +3,13 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.4.1 — 2026-09-18
+
+### Changed
+- **The walkthrough covers lenses.** Two pages after EI: one pointing at
+  the lens on a card, and one on setting an offset — pick a zero lens,
+  put a new lens on, match it, apply it.
+
 ## 1.4.0 — 2026-09-18
 
 ### Added
