@@ -115,6 +115,23 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.4.0 — 2026-09-18
+
+#### Added
+- **Lens offsets.** Each camera card has the lens that's on it. Choosing
+  a different one moves that camera by the difference between the two
+  lenses' casts, so a match survives a lens change. Match a camera after
+  putting a lens on and the correction shows beside the lens name; fold
+  it into that lens and every camera that takes the lens gets it, or
+  apply it to one body only when that body really does see the lens
+  differently. New Lens puts a lens on the camera with no offset and
+  opens nothing over the window, so the wheel is there while you set it,
+  and one lens can be made the zero every other lens is measured from.
+  Each lens also holds its make, model and serial, so an offset belongs
+  to the copy it was measured on. Offsets are kept in mireds and CC, so they hold at any
+  colour temperature, and moving the master moves the look without
+  touching them.
+
 ### 1.3.0 — 2026-09-18
 
 #### Added

@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.3.0. Newest download:
+Version 1.4.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -169,6 +169,58 @@ master shows the range, for example 400-800.
 To keep white balance linked but set EI on each camera separately,
 uncheck Link EI on the master card. The master EI slider greys out and
 says "unlinked".
+
+
+LENSES
+------
+
+Lenses have their own colour cast, so a lens change can break a match
+you just made. Kelvin can hold the look across the change.
+
+Under each camera's readouts is the lens on that camera. Choose one and
+Kelvin moves that camera by the difference between the two lenses, so
+the look stays where it was and only that camera's own cast changes.
+
+The zero lens:
+
+Pick one lens as the one everything else is measured from. Put it on
+every camera, add it with New Lens, and match the cameras as usual. Its
+offset stays zero: what you dial in there is the difference between the
+bodies, which is the match itself. Every other lens is then measured
+against that.
+
+Setting a lens's offset:
+
+1. Put the lens on the camera and choose it in the camera's lens menu.
+   New Lens adds one, on that camera, with no offset yet. Nothing opens
+   over the window, so the wheel stays under your hand.
+2. Set the white balance: drag the wheel, type a value, or white
+   balance on the camera itself. What you've moved it by shows in
+   orange beside the lens name.
+3. Click that orange amount, or choose "Apply ... to <lens>" from the
+   lens menu.
+
+From then on that lens carries the offset onto any camera it goes on.
+If one body really does see a lens differently, use "Apply to <lens> on
+This Camera Only" and that body keeps its own value for it; the rest
+keep using the lens's.
+
+"Make <lens> the Zero Lens" measures everything from a different lens
+instead. Every lens moves by the same amount, so they keep their
+relationships, and nothing on a camera moves.
+
+Offsets are held in mireds and CC, not kelvin, so a lens that is a few
+mireds warm is just as warm at 3200 K as at 8000 K.
+
+Moving the master doesn't count as a lens correction: the look moves
+and the offsets are kept. Only moving a camera on its own does.
+
+Lens Offsets... in the lens menu lists every lens, what it does, and
+any camera that has its own value for one. Each lens also holds its
+make, model and serial number, so an offset belongs to the piece of
+glass it was measured on rather than to the model: two copies of the
+same lens don't have the same cast. The card shows only the short name
+you give it; the rest is in the list and in the tooltip.
 
 
 SIZE
