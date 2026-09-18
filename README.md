@@ -115,6 +115,19 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.4.4 — 2026-09-18
+
+#### Fixed
+- **The window fits the cards again.** The lens row, added in 1.4.0, made
+  every camera card taller than the master, and the window still ended at
+  the bottom of the master: the cards were cut off. The master now has a
+  row of its own (Lens Offsets…, which opens the list), so the cards are
+  the same height again, and the window fits whichever card is tallest so
+  this can't cut one off again.
+- **Fine can't go missing.** It's now in the View menu (⌥⌘F) as well as
+  the toolbar, and the two toolbar buttons are separate items rather than
+  a group, so a crowded toolbar can't drop Fine while keeping Link All.
+
 ### 1.4.3 — 2026-09-18
 
 #### Fixed

@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.4.3. Newest download:
+Version 1.4.4. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -108,8 +108,8 @@ cameras, so you can see how far apart they are.
 
 - Drag anywhere on the wheel to move the puck. It moves from where it
   is; grabbing the wheel never makes it jump.
-- Hold Shift while dragging, or turn on Fine in the toolbar, to move
-  at a fifth of the speed.
+- Hold Shift while dragging, or turn on Fine in the toolbar (or
+  View > Fine, Option Command F), to move at a fifth of the speed.
 - Click the wheel, then use the arrow keys:
       Left / Right   warmer / cooler by 100 K (10 K with Shift)
       Up / Down      magenta / green by 1 CC (0.1 with Shift)
