@@ -21,7 +21,7 @@ address changes, double-click it in the sidebar and type the new one.
 
 Every camera has a colour wheel laid out like a vectorscope: warmer to
 the left, cooler to the right, magenta up and to the right, green down
-and to the left. Drag the puck, type a colour temperature or tint, or
+and to the left. Drag the puck, type a kelvin or tint value, or
 step with the arrow keys. The other cameras show as faint dots on every
 wheel, so you can see how far apart they are.
 
@@ -29,8 +29,8 @@ wheel, so you can see how far apart they are.
 
 Link the cameras you've matched. The **master** wheel sits at their
 average. Move it and every linked camera moves by the same amount:
-colour temperature in mireds, the way a gel shifts light, and tint in
-CC. Offsets you set by eye stay put, and a move stops when any linked
+the same amount of warming or cooling, the way a gel shifts
+light, and the same tint in CC. Offsets you set by eye stay put, and a move stops when any linked
 camera reaches the end of its range rather than letting one fall out of
 the match.
 
@@ -48,9 +48,9 @@ With [Tangent Hub](https://www.tangentwave.co.uk) installed, a Tangent
 panel finds Kelvin on its own. One mode puts the selected camera under
 ball 1; the other puts the master under ball 1 and a camera under each of
 balls 2 and 3, cycled with the buttons beside them, with the rings on EI
-and the displays showing which camera each ball is on. One count is one
-mired, so a turn shifts the light by as much at 3200 K as at 8000 K. The
-Mapper can remap all of it.
+and the displays showing which camera each ball is on. A count is a fixed
+amount of warming, so a turn shifts the light by as much at 3200 K as at
+8000 K. The Mapper can remap all of it.
 
 ### Size
 
@@ -114,6 +114,22 @@ or endorsed by ARRI.
 
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
+
+### 1.4.2 — 2026-09-18
+
+#### Changed
+- **It's called kelvin, the way the camera does.** The walkthrough, the
+  guide, the public page and the Tangent panel's controls all say kelvin
+  rather than colour temperature, so the app and the camera use one word
+  for the same setting. The panel's displays read "A K", "Rig K", and
+  the readouts on the cards are unchanged.
+- **Lens offsets read in kelvin, not mireds.** Nothing on screen says
+  mired any more. A correction you've dialled shows as the change you
+  actually made — "Apply +530 K" — and a lens in the menu shows what it
+  is worth on that camera where it sits now; the lens list shows each one
+  at 5600 K. An offset is still held as a fixed amount of warming, so it
+  holds at any kelvin, which is why the number it is worth moves with the
+  look.
 
 ### 1.4.1 — 2026-09-18
 

@@ -3,6 +3,22 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.4.2 — 2026-09-18
+
+### Changed
+- **It's called kelvin, the way the camera does.** The walkthrough, the
+  guide, the public page and the Tangent panel's controls all say kelvin
+  rather than colour temperature, so the app and the camera use one word
+  for the same setting. The panel's displays read "A K", "Rig K", and
+  the readouts on the cards are unchanged.
+- **Lens offsets read in kelvin, not mireds.** Nothing on screen says
+  mired any more. A correction you've dialled shows as the change you
+  actually made — "Apply +530 K" — and a lens in the menu shows what it
+  is worth on that camera where it sits now; the lens list shows each one
+  at 5600 K. An offset is still held as a fixed amount of warming, so it
+  holds at any kelvin, which is why the number it is worth moves with the
+  look.
+
 ## 1.4.1 — 2026-09-18
 
 ### Changed

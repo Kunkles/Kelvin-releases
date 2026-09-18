@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.4.1. Newest download:
+Version 1.4.2. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -60,7 +60,7 @@ THE WINDOW
 ----------
 
   Sidebar       Your cameras: name, IP address, a status dot, current
-                colour temperature and tint, and a link button.
+                kelvin and tint, and a link button.
                 Type an IP address in the box at the bottom and press
                 Return (or +) to add a camera. Double-click a camera's
                 IP address to change it.
@@ -98,8 +98,8 @@ MATCHING A CAMERA
 
 Each camera's wheel is laid out like a vectorscope:
 
-  left ......... warmer (higher colour temperature)
-  right ........ cooler (lower colour temperature)
+  left ......... warmer (higher kelvin)
+  right ........ cooler (lower kelvin)
   up and right . more magenta
   down and left  more green
 
@@ -120,7 +120,7 @@ The (...) menu on a card has the camera's own white balance presets
 All Cameras, which sets every other camera to exactly this camera's
 values as a starting point.
 
-Colour temperature moves in 10 K steps and tint in 0.1 CC steps.
+Kelvin moves in 10 K steps and tint in 0.1 CC steps, as on the camera.
 
 
 LINKING AND THE MASTER WHEEL
@@ -137,7 +137,8 @@ moving.
 
 The master puck sits at the average of the linked cameras. When you
 move the master, every linked camera moves by the same amount:
-colour temperature in mireds (the way a gel shifts light) and tint in
+the same amount of warming or cooling (the way a gel shifts
+light, rather than the same number of kelvin) and the same tint in
 CC. So if B camera sits 200 K warmer than A because that's what
 matched by eye, it stays that much warmer.
 
@@ -209,8 +210,11 @@ keep using the lens's.
 instead. Every lens moves by the same amount, so they keep their
 relationships, and nothing on a camera moves.
 
-Offsets are held in mireds and CC, not kelvin, so a lens that is a few
-mireds warm is just as warm at 3200 K as at 8000 K.
+An offset is a fixed amount of warming or cooling, not a fixed number
+of kelvin, so a lens that runs a little warm runs just as warm at
+3200 K as at 8000 K. That means the kelvin it is worth depends on where
+you are: the lens list shows each offset at 5600 K, and a camera's card
+shows it from wherever that camera is sitting.
 
 Moving the master doesn't count as a lens correction: the look moves
 and the offsets are kept. Only moving a camera on its own does.
@@ -255,9 +259,9 @@ The panel has two modes; the B button steps between them.
            with the two buttons beside it, so you can hold two cameras
            under your hands. Each ring is that camera's EI.
 
-Left and right on a ball is colour temperature, up and down is tint,
-the same as the wheel on screen. One count is one mired, so a turn
-shifts the light by as much at 3200 K as at 8000 K. The A button is
+Left and right on a ball is kelvin, up and down is tint,
+the same as the wheel on screen. A count is a fixed amount of warming,
+so a turn shifts the light by as much at 3200 K as at 8000 K. The A button is
 ALT: hold it for finer moves.
 
 The displays show which camera each ball is on and its values. On a
