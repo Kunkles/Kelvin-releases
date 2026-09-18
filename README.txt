@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.2.4. Newest download:
+Version 1.3.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -184,6 +184,37 @@ If there are more cameras than fit on the screen, the cards scroll
 sideways.
 
 
+TANGENT PANEL
+-------------
+
+Kelvin can be driven from a Tangent panel (Element, Wave, Ripple).
+Install Tangent Hub from tangentwave.co.uk, connect the panel, and
+open Kelvin: the panel finds it on its own, and the sidebar says which
+panel is connected. Window > Use Tangent Panel turns this off.
+
+The panel has two modes; the B button steps between them.
+
+  Camera   Ball 1 is the camera selected in the sidebar. The two
+           buttons beside it select the previous and next camera.
+           The ring is that camera's EI.
+
+  Rig      Ball 1 is the master and moves every linked camera, as the
+           master wheel does. Balls 2 and 3 are cameras, each cycled
+           with the two buttons beside it, so you can hold two cameras
+           under your hands. Each ring is that camera's EI.
+
+Left and right on a ball is colour temperature, up and down is tint,
+the same as the wheel on screen. One count is one mired, so a turn
+shifts the light by as much at 3200 K as at 8000 K. The A button is
+ALT: hold it for finer moves.
+
+The displays show which camera each ball is on and its values. On a
+panel with a bigger display, the same is spelled out in full.
+
+The layout above is the default. Tangent Mapper can change any of it:
+Kelvin appears there as "Kelvin", with every control it has.
+
+
 TROUBLESHOOTING
 ---------------
 
@@ -194,6 +225,13 @@ A camera stays red (offline)
   - Make sure the Mac and camera are on the same network.
   - Check Local Network permission: System Settings > Privacy &
     Security > Local Network > Kelvin.
+
+The panel does nothing
+  - Check Tangent Hub is installed and running, and that the panel is
+    connected (Kelvin's sidebar says which panel it sees).
+  - Check Window > Use Tangent Panel is ticked.
+  - Kelvin has to be the application the panel is on. The Hub switches
+    that automatically when Kelvin is in front.
 
 The wheel seems to fight you
   - Someone may be changing white balance on the camera itself.

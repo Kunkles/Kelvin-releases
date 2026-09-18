@@ -3,6 +3,21 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.3.0 — 2026-09-18
+
+### Added
+- **Tangent panel support.** With Tangent Hub installed, an Element,
+  Wave or Ripple panel finds Kelvin by itself. In Camera mode ball 1 is
+  the camera selected in the sidebar; in Rig mode ball 1 is the master
+  and balls 2 and 3 are cameras you cycle with the buttons beside them.
+  Rings set EI, and the panel's displays name the camera each ball is on
+  and show its colour temperature and tint. One count is one mired, so a
+  turn shifts the light by as much at 3200 K as at 8000 K. Every move
+  goes through the same code as the wheels, so nothing the panel does is
+  out of step with the window. Tangent Mapper can remap all of it, and
+  Window › Use Tangent Panel turns it off, and the walkthrough has a page
+  on it.
+
 ## 1.2.4 — 2026-09-16
 
 ### Added
