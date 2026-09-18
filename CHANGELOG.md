@@ -3,6 +3,14 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.4.3 — 2026-09-18
+
+### Fixed
+- **The walkthrough's "Or type it" page points at the readouts again.**
+  The lens row, added in 1.4.0, had taken over the marker the tour aims
+  at, so the page spotlighted the lens menu instead. The same slip left
+  the kelvin and tint fields editable on an offline camera.
+
 ## 1.4.2 — 2026-09-18
 
 ### Changed
