@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.4.4. Newest download:
+Version 1.5.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -218,6 +218,34 @@ shows it from wherever that camera is sitting.
 
 Moving the master doesn't count as a lens correction: the look moves
 and the offsets are kept. Only moving a camera on its own does.
+
+INTERNAL ND
+-----------
+
+Beside the lens on each card is the internal ND in that camera: No ND,
+0.6, 1.2 or 1.8. No ND is the one the others are measured from.
+
+On a camera that reports its filter, Kelvin follows it. Turn the ND
+wheel on the camera and Kelvin sees the new filter and applies that
+camera's offset for it, so the look holds without you touching the app.
+Choosing an ND in Kelvin moves the filter in the camera the same way it
+sets kelvin or EI. Note that an ND is a couple of stops of exposure, so
+it is a bigger change to a live image than a white balance nudge.
+
+On a camera that doesn't report one, Kelvin just notes which ND you say
+is in, and moves the white balance by the difference.
+
+An ND never leaves the body it's in, so its offset belongs to that
+camera alone: setting ND 1.2 on one camera doesn't touch another's.
+Put the ND in, match the camera, then click the orange amount (or
+"Apply ... to ND 1.2" in the ND menu). "Clear ND 1.2 Offset" undoes it.
+
+A lens offset and an ND offset add up, so a camera on a 35 mm at ND 1.2
+sits at both.
+
+On a narrow card the orange amount shows as a + button; what it will
+apply is in its tooltip and in the menus.
+
 
 Lens Offsets... in the lens menu lists every lens, what it does, and
 any camera that has its own value for one. Each lens also holds its

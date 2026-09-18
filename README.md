@@ -115,6 +115,36 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.5.0 — 2026-09-18
+
+#### Changed
+- **No lens button on the master card.** The master has no lens, so the
+  row is blank space there; it keeps the cards the same height and the EI
+  sliders lined up. The lens list is still in each camera's lens menu.
+
+### 1.5.0 — 2026-09-18
+
+#### Added
+- **Internal ND offsets.** Each card now carries the ND in that camera
+  beside its lens — No ND, 0.6, 1.2, 1.8. An ND stays with the body, so
+  its offsets are that camera's alone: match the camera with the ND in
+  and click the orange amount to set it. ND and lens offsets add up.
+- **Kelvin follows the ND in the camera, and can move it.** Turn the ND
+  wheel on the camera and Kelvin sees the filter change and applies that
+  camera's offset for it, with nothing to tell the app; choosing an ND in
+  Kelvin moves the filter in the camera. On a camera that reports no
+  filter, the ND is just something you tell Kelvin, as before.
+
+#### Changed
+- **No lens button on the master card.** The master has no lens, so the
+  row is blank space there; it keeps the cards the same height and the EI
+  sliders lined up. The lens list is still in each camera's lens menu.
+
+#### Fixed
+- **What you've dialled clears as soon as it's applied.** The amount
+  beside the lens is worked out from a value the card wasn't watching, so
+  it sat there stale until something else redrew the card.
+
 ### 1.4.4 — 2026-09-18
 
 #### Fixed
