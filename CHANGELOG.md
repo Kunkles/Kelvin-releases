@@ -3,6 +3,43 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.6.0 — 2026-09-18
+
+### Added
+- **Kelvin-only and tint-only drags.** Hold Command while dragging for
+  kelvin alone, Option for tint alone.
+- **Cameras are named after themselves.** A camera that reports its index
+  letter is called "B Cam" and so on, until you give it a name of your
+  own.
+- **Zero Kelvin and Zero Tint on every card.** On a camera they put that
+  axis back to neutral; on the master they undo its shift on that axis.
+- **White balance presets on every camera's menu**, the camera's own when
+  it reports them and the usual four when it doesn't.
+
+### Changed
+- **Zeroing the master undoes what it did.** It used to drop the handle
+  back in the middle and leave the shift on the cameras. It now takes its
+  own shift back off the linked cameras; what you dialled on each camera
+  by hand stays. The master's menu has lost its colour temperatures,
+  which meant nothing on a control that only ever shifts.
+- **Fine lights up in the accent colour.** The system's "on" grey for a
+  toolbar button is too quiet to catch across a cart.
+- **The wheels move at half the speed.** Dragging tracked the wheel one
+  for one, which is more than the hand wants when matching by eye. Fine
+  is unchanged, so it's finer again by the same margin as before.
+- **The master puck stays where you put it, and reads out a shift.** It
+  sat at the linked cameras' average, so dialling one camera by hand
+  dragged the master around with it. The master moves cameras by a shift,
+  so it's a handle rather than a reading: it now sits in the middle of
+  its wheel at zero, only moves when you move it, and its readouts say
+  how far the rig has been shifted (+200 K, +0.5 CC) rather than a colour
+  temperature. Zero the Master, in its menu, puts the handle back in the
+  middle without moving a camera. A master move still shifts every linked
+  camera equally and still stops at the first camera's limit.
+- **The ND list comes from the camera.** A camera that reports its
+  filters offers those; only one that reports none falls back to the
+  ALEXA 35's.
+
 ## 1.5.0 — 2026-09-18
 
 ### Changed

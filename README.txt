@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.5.0. Newest download:
+Version 1.6.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -78,6 +78,8 @@ An offline camera's card shows the reason in red under its name.
 ADDING, RENAMING AND REMOVING CAMERAS
 -------------------------------------
 
+- A camera that reports its index letter is named after it: a camera
+  that says it is B is called "B Cam". Rename it and Kelvin stops.
 - Add: type the camera's IP address in the sidebar box and press
   Return.
 - Rename: click the name at the top of the camera's card and type.
@@ -110,6 +112,8 @@ cameras, so you can see how far apart they are.
   is; grabbing the wheel never makes it jump.
 - Hold Shift while dragging, or turn on Fine in the toolbar (or
   View > Fine, Option Command F), to move at a fifth of the speed.
+- Hold Command while dragging for kelvin only, or Option for tint
+  only, when you want one without touching the other.
 - Click the wheel, then use the arrow keys:
       Left / Right   warmer / cooler by 100 K (10 K with Shift)
       Up / Down      magenta / green by 1 CC (0.1 with Shift)
@@ -135,8 +139,19 @@ A linked card is outlined in your Mac's accent colour, and its link
 button is highlighted. The master card says how many cameras it is
 moving.
 
-The master puck sits at the average of the linked cameras. When you
-move the master, every linked camera moves by the same amount:
+Each camera's ... menu has the white balance presets, Zero Kelvin
+(5600 K), Zero Tint, and Copy White Balance to All Cameras.
+
+The master puck sits in the middle of its wheel and stays where you put
+it. It's a handle, not a reading: moving a camera on its own moves that
+camera's dot on the master wheel and leaves the puck alone. Its
+readouts show how far you've shifted the rig, not a colour temperature
+-- the middle is zero. "Zero the Master" in the master's menu takes the master's shift back
+off the linked cameras and puts the handle back in the middle; what you
+dialled on each camera by hand stays. "Zero Kelvin" and "Zero Tint" do
+the same for one axis.
+
+When you move the master, every linked camera moves by the same amount:
 the same amount of warming or cooling (the way a gel shifts
 light, rather than the same number of kelvin) and the same tint in
 CC. So if B camera sits 200 K warmer than A because that's what
