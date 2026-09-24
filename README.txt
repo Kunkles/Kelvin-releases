@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.6.0. Newest download:
+Version 1.7.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -83,6 +83,8 @@ ADDING, RENAMING AND REMOVING CAMERAS
 - Add: type the camera's IP address in the sidebar box and press
   Return.
 - Rename: click the name at the top of the camera's card and type.
+- Rename: double-click the camera's name in the sidebar, or click the
+  name at the top of its card.
 - Change the address: double-click the address under the camera's name
   in the sidebar, type the new one, and press Return (Escape cancels).
   The camera reconnects at the new address, keeping its name, colour
@@ -113,7 +115,8 @@ cameras, so you can see how far apart they are.
 - Hold Shift while dragging, or turn on Fine in the toolbar (or
   View > Fine, Option Command F), to move at a fifth of the speed.
 - Hold Command while dragging for kelvin only, or Option for tint
-  only, when you want one without touching the other.
+  only, when you want one without touching the other. The toolbar
+  shows both, and the one you're holding lights up.
 - Click the wheel, then use the arrow keys:
       Left / Right   warmer / cooler by 100 K (10 K with Shift)
       Up / Down      magenta / green by 1 CC (0.1 with Shift)

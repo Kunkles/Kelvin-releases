@@ -117,6 +117,15 @@ or endorsed by ARRI.
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+### 1.7.0 — 2026-09-24
+
+#### Added
+- **The axis keys are in the toolbar**, quietly: ⌘ K and ⌥ Tint, each
+  lighting up while you hold it, so the lock shows as well as reminds.
+- **Rename a camera from the sidebar.** Double-click its name, the way
+  its address already works. Return saves, Escape cancels, and clicking
+  away saves.
+
 ### 1.6.0 — 2026-09-18
 
 #### Added
