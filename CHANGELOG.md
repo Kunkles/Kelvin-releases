@@ -3,6 +3,16 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.8.1 — 2026-09-25
+
+### Changed
+- **The walkthrough covers the newer half of the app**: the internal ND
+  and how its offsets are set, the two ways Kelvin reaches a camera and
+  what the Camera Access Protocol adds, and the Settings window along
+  with each camera's own connection settings. The pages already there
+  mention renaming a camera from the sidebar, Zero Kelvin and Zero Tint
+  on the cards and the master, and where the wheel speeds live.
+
 ## 1.8.0 — 2026-09-25
 
 ### Added

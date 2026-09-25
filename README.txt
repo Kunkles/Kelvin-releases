@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.8.0. Newest download:
+Version 1.8.1. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -391,5 +391,7 @@ ABOUT
 Kelvin is free. It is signed with a Developer ID certificate and
 notarised by Apple.
 
-ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
-or endorsed by ARRI.
+ARRI and ALEXA are trademarks of ARRI. Kelvin's support for the Camera
+Access Protocol is built on ARRI's documentation, under their partner
+programme. Kelvin is an independent app all the same: it isn't made,
+sold or endorsed by ARRI.
