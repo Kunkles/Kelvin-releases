@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.8.1. Newest download:
+Version 1.8.2. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -289,27 +289,36 @@ sideways.
 SETTINGS
 --------
 
-Kelvin > Settings (Command ,) has three tabs.
+Kelvin > Settings (Command ,) has two tabs.
 
   Wheels    How far a wheel moves for a given drag, and how much
             slower Fine is. The line underneath says what the two
             come to.
 
-  Cameras   Whether to use ARRI's Camera Access Protocol, and the
-            password set on the cameras for it. CAP is the camera's
-            own interface: it sends changes as they happen instead of
-            Kelvin asking every second, and it reports the camera's EI
-            and ND lists, the lens mounted and the camera's index
-            letter. Without a password Kelvin uses the Web Remote
-            interface, as it always has.
-
   Panel     Tangent panel support, and which panel it can see.
 
-A rig is often mixed, so any camera can differ from the rest:
-"Camera Settings..." in a camera's ... menu has that camera's address,
-whether to use CAP on it, and a password of its own if it needs one. A
-password kept there is in the Mac's keychain, not in Kelvin's settings
-file.
+A camera's address belongs to the camera rather than to Kelvin:
+double-click it in the sidebar, or open "Camera Settings..." from the
+camera's ... menu, which also says which camera is answering there.
+
+
+HOW KELVIN REACHES A CAMERA
+---------------------------
+
+Through the camera's Web Remote interface, the same one the camera
+serves to a browser. Nothing has to be set up on the camera beyond
+being on the network with the Mac.
+
+Kelvin asks each camera for its values about four times a second and
+sends yours back as you move, so changes made on the camera itself
+show up in the app within a moment, and the app never overwrites a
+change made at the camera in the middle of your drag.
+
+A camera that stops answering says why in red under its name and keeps
+trying, backing off as it goes; a camera that comes back is picked up
+without anything from you. If a different body turns up at an address,
+Kelvin forgets what it learned about the last one rather than showing
+you the old camera's EI and ND lists.
 
 
 TANGENT PANEL
@@ -361,28 +370,21 @@ The panel does nothing
   - Kelvin has to be the application the panel is on. The Hub switches
     that automatically when Kelvin is in front.
 
-A camera says "Password refused"
-  - The password in Settings (or in that camera's own settings) isn't
-    the one set on the camera. Kelvin carries on over the Web Remote
-    interface meanwhile, so nothing stops working.
-  - Fix the password and the camera picks CAP up again the next time
-    it connects; Kelvin > Settings, or "Camera Settings..." in the
-    camera's ... menu.
-
-CAP never connects, but the camera is online
-  - CAP may be switched off on the camera, or the camera may already
-    have as many clients as it allows — an AMIRA or ALEXA Mini takes
-    four, an SXT or LF only one. Kelvin waits a few seconds, falls
-    back to the Web Remote interface and tries again a minute later.
-
 The wheel seems to fight you
   - Someone may be changing white balance on the camera itself.
     Kelvin follows changes made on the camera, but never in the
     middle of your drag.
 
-EI shows "not available"
-  - The camera's EI list isn't one Kelvin recognises. EI is
-    supported on the ALEXA 35 for now; white balance still works.
+EI says "read only", or shows no slider
+  - The camera's EI list isn't one Kelvin recognises, so it won't
+    guess what stepping the slider would set. The EI the camera
+    reports is still shown, and white balance works as usual. EI can
+    be set on the ALEXA 35 for now.
+
+The ND didn't change
+  - Kelvin says so under the camera's name if the camera refuses the
+    change or leaves the filter where it is. An internal ND can be
+    busy or switched off at the camera; try it on the camera itself.
 
 
 ABOUT
@@ -391,7 +393,5 @@ ABOUT
 Kelvin is free. It is signed with a Developer ID certificate and
 notarised by Apple.
 
-ARRI and ALEXA are trademarks of ARRI. Kelvin's support for the Camera
-Access Protocol is built on ARRI's documentation, under their partner
-programme. Kelvin is an independent app all the same: it isn't made,
-sold or endorsed by ARRI.
+ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
+or endorsed by ARRI.

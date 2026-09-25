@@ -3,33 +3,40 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
-## 1.8.1 — 2026-09-25
-
-### Changed
-- **The walkthrough covers the newer half of the app**: the internal ND
-  and how its offsets are set, the two ways Kelvin reaches a camera and
-  what the Camera Access Protocol adds, and the Settings window along
-  with each camera's own connection settings. The pages already there
-  mention renaming a camera from the sidebar, Zero Kelvin and Zero Tint
-  on the cards and the master, and where the wheel speeds live.
-
-## 1.8.0 — 2026-09-25
+## 1.8.2 — 2026-09-25
 
 ### Added
-- **A Settings window** (⌘,): wheel speed and how much slower Fine is,
-  the camera password and whether to use ARRI's Camera Access Protocol,
-  and the Tangent panel. Wheel speed used to be a constant in the code.
-- **Per-camera connection settings.** "Camera Settings…" in a camera's
-  menu holds that camera's address, whether to use CAP on it, and a
-  password of its own, since a rig is often a mix of bodies. Passwords
-  live in the Mac's keychain.
-- **Cameras are reached over ARRI's Camera Access Protocol** when
-  there's a password for it. The camera pushes every change as it
-  happens instead of Kelvin asking once a second, and it reports its
-  own EI and ND lists, its white balance presets, the lens mounted and
-  its index letter. Kelvin falls back to the Web Remote interface if
-  CAP is off, refuses the password, or doesn't answer, and tries again
-  a minute later unless the password was wrong.
+- **A Settings window** (⌘,): how far a wheel moves for a given drag,
+  and how much slower Fine is. Both used to be constants in the code.
+- **Camera Settings…** in a camera's menu, with that camera's address
+  and which camera is answering at it.
+- **The walkthrough covers the newer half of the app**: the internal ND
+  and how its offsets are set, how Kelvin reaches a camera, and the
+  Settings window. The pages already there mention renaming a camera
+  from the sidebar, Zero Kelvin and Zero Tint on the cards and the
+  master, and where the wheel speeds live.
+
+### Changed
+- **A camera that stops answering backs off** instead of asking again
+  every two seconds, and says what happened in plain words — "No
+  answer from the camera", "Nothing is answering at that address" —
+  rather than repeating the network's own wording.
+- **A different body at the same address starts clean.** Kelvin forgets
+  the last camera's EI list, ND filters, presets and limits rather than
+  showing you one camera's settings against another's picture.
+- **ND goes back in the camera's own words.** Bodies don't all spell
+  their filters the same way, and a word Kelvin made up is a change the
+  camera quietly ignores. If the camera refuses the change, or the
+  filter doesn't move, the card says so.
+- **EI on a camera Kelvin doesn't have a list for** now shows the EI the
+  camera reports, marked "read only", instead of "not available". Only
+  the slider is out of action.
+- **The lens the camera reports** is in the lens menu's tooltip, so a
+  card left on yesterday's lens is easy to spot.
+
+### Fixed
+- **Every camera was being connected to twice**, which was invisible
+  over the Web Remote interface but twice the traffic.
 
 ## 1.7.0 — 2026-09-24
 
