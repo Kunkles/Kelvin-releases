@@ -8,7 +8,7 @@ Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.7.0. Newest download:
+Version 1.8.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -286,6 +286,32 @@ If there are more cameras than fit on the screen, the cards scroll
 sideways.
 
 
+SETTINGS
+--------
+
+Kelvin > Settings (Command ,) has three tabs.
+
+  Wheels    How far a wheel moves for a given drag, and how much
+            slower Fine is. The line underneath says what the two
+            come to.
+
+  Cameras   Whether to use ARRI's Camera Access Protocol, and the
+            password set on the cameras for it. CAP is the camera's
+            own interface: it sends changes as they happen instead of
+            Kelvin asking every second, and it reports the camera's EI
+            and ND lists, the lens mounted and the camera's index
+            letter. Without a password Kelvin uses the Web Remote
+            interface, as it always has.
+
+  Panel     Tangent panel support, and which panel it can see.
+
+A rig is often mixed, so any camera can differ from the rest:
+"Camera Settings..." in a camera's ... menu has that camera's address,
+whether to use CAP on it, and a password of its own if it needs one. A
+password kept there is in the Mac's keychain, not in Kelvin's settings
+file.
+
+
 TANGENT PANEL
 -------------
 
@@ -334,6 +360,20 @@ The panel does nothing
   - Check Window > Use Tangent Panel is ticked.
   - Kelvin has to be the application the panel is on. The Hub switches
     that automatically when Kelvin is in front.
+
+A camera says "Password refused"
+  - The password in Settings (or in that camera's own settings) isn't
+    the one set on the camera. Kelvin carries on over the Web Remote
+    interface meanwhile, so nothing stops working.
+  - Fix the password and the camera picks CAP up again the next time
+    it connects; Kelvin > Settings, or "Camera Settings..." in the
+    camera's ... menu.
+
+CAP never connects, but the camera is online
+  - CAP may be switched off on the camera, or the camera may already
+    have as many clients as it allows — an AMIRA or ALEXA Mini takes
+    four, an SXT or LF only one. Kelvin waits a few seconds, falls
+    back to the Web Remote interface and tries again a minute later.
 
 The wheel seems to fight you
   - Someone may be changing white balance on the camera itself.

@@ -3,6 +3,24 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.8.0 — 2026-09-25
+
+### Added
+- **A Settings window** (⌘,): wheel speed and how much slower Fine is,
+  the camera password and whether to use ARRI's Camera Access Protocol,
+  and the Tangent panel. Wheel speed used to be a constant in the code.
+- **Per-camera connection settings.** "Camera Settings…" in a camera's
+  menu holds that camera's address, whether to use CAP on it, and a
+  password of its own, since a rig is often a mix of bodies. Passwords
+  live in the Mac's keychain.
+- **Cameras are reached over ARRI's Camera Access Protocol** when
+  there's a password for it. The camera pushes every change as it
+  happens instead of Kelvin asking once a second, and it reports its
+  own EI and ND lists, its white balance presets, the lens mounted and
+  its index letter. Kelvin falls back to the Web Remote interface if
+  CAP is off, refuses the password, or doesn't answer, and tries again
+  a minute later unless the password was wrong.
+
 ## 1.7.0 — 2026-09-24
 
 ### Added

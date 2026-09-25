@@ -59,6 +59,18 @@ amount of warming, so a turn shifts the light by as much at 3200 K as at
 The master and every camera card are the same size and scale together
 when you drag the window's edge. The window fits itself to the cards.
 
+### How it talks to the cameras
+
+Out of the box Kelvin uses the camera's Web Remote interface, which
+needs nothing set up. Put the camera's password into **Settings**
+(⌘,) and it uses ARRI's Camera Access Protocol instead: the camera
+sends every change as it happens rather than Kelvin asking once a
+second, and it reports its own EI and ND lists, its white balance
+presets, the lens mounted and its index letter. A rig is often mixed, so
+each camera can have its own address, password and choice of interface
+in **Camera Settings…**. If CAP isn't available on a camera, that
+camera quietly falls back to the Web Remote interface.
+
 ---
 
 ## Installing
@@ -116,6 +128,24 @@ or endorsed by ARRI.
 
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
+
+### 1.8.0 — 2026-09-25
+
+#### Added
+- **A Settings window** (⌘,): wheel speed and how much slower Fine is,
+  the camera password and whether to use ARRI's Camera Access Protocol,
+  and the Tangent panel. Wheel speed used to be a constant in the code.
+- **Per-camera connection settings.** "Camera Settings…" in a camera's
+  menu holds that camera's address, whether to use CAP on it, and a
+  password of its own, since a rig is often a mix of bodies. Passwords
+  live in the Mac's keychain.
+- **Cameras are reached over ARRI's Camera Access Protocol** when
+  there's a password for it. The camera pushes every change as it
+  happens instead of Kelvin asking once a second, and it reports its
+  own EI and ND lists, its white balance presets, the lens mounted and
+  its index letter. Kelvin falls back to the Web Remote interface if
+  CAP is off, refuses the password, or doesn't answer, and tries again
+  a minute later unless the password was wrong.
 
 ### 1.7.0 — 2026-09-24
 
