@@ -3,6 +3,31 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.9.0 — 2026-10-26
+
+### Added
+- **Kelvin can share a camera with your other tools.** A camera only
+  lets so many things talk to it at once, and on some bodies that is
+  one. noCAP is a separate free app that connects to each camera once
+  and shares that connection, so Kelvin and whatever else you run can
+  have the same camera at the same time. Turn it on in Settings ›
+  Bridge, then pick which noCAP camera each card is in that card's
+  Camera Settings…. noCAP is available separately; ask while it is in
+  testing.
+- **The walkthrough covers it**, between how Kelvin reaches a camera
+  and the Settings window.
+
+### Changed
+- **A card set up that way looks after itself.** If noCAP isn't
+  running, the card goes to the camera's own address within a few
+  seconds and says "No bridge" beside whatever it finds there, then
+  moves back on when noCAP returns. Cards can be mixed: some through
+  noCAP, some straight at the camera.
+- **A camera reached that way brings its own limits and lists**, rather
+  than Kelvin assuming ARRI's. A body with a different white balance
+  range, a different set of NDs or a different EI list reads correctly
+  without Kelvin having to know the make.
+
 ## 1.8.2 — 2026-09-25
 
 ### Added

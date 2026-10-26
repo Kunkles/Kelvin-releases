@@ -321,6 +321,30 @@ Kelvin forgets what it learned about the last one rather than showing
 you the old camera's EI and ND lists.
 
 
+SHARING A CAMERA WITH YOUR OTHER TOOLS
+--------------------------------------
+
+A camera only lets so many things talk to it at once, and on some
+bodies that is one. noCAP is a separate free app that connects to each
+camera once and shares that connection, so Kelvin and whatever else you
+run can have the same camera at the same time. It also means one
+conversation with the camera instead of one per tool, which matters on
+a long radio link.
+
+  1. Install and open noCAP, and add your cameras to it.
+  2. In Kelvin: Settings > Bridge, switch it on. The address is
+     127.0.0.1:5260 when noCAP is on this Mac, which is the usual case.
+  3. On each card, Camera Settings... > Bridge, and pick which noCAP
+     camera that card is.
+
+Nothing is lost if noCAP isn't running. A card whose camera it can't
+reach goes to the camera's own address by itself within a few seconds,
+says "No bridge" beside anything it finds there, and moves back on when
+noCAP returns. Cards can be mixed: some through noCAP, some not.
+
+noCAP is available separately; ask Ryan for it while it is in testing.
+
+
 TANGENT PANEL
 -------------
 
