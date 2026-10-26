@@ -3,6 +3,17 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.9.1 — 2026-10-26
+
+### Changed
+- **Kelvin asks the camera for a lot less.** It was fetching the
+  camera's entire state — around 285 KB — every five seconds, on top
+  of the small updates it already receives four times a second. That
+  full fetch now happens every thirty seconds, which is still often
+  enough to recover anything a small update missed. Nothing responds
+  any slower; there is simply far less traffic to a camera that may be
+  at the end of a long radio link.
+
 ## 1.9.0 — 2026-10-26
 
 ### Added
