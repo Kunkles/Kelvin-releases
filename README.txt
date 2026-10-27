@@ -1,14 +1,14 @@
 Kelvin
 ========
 
-Match white balance and EI across ARRI ALEXA cameras, then move them
-together.
+Match white balance and EI across ARRI ALEXA and Sony VENICE cameras,
+then move them together.
 
 Kelvin shows a colour wheel for every camera. Match each camera by
 eye on its own wheel, link the ones you've matched, and a master wheel
 moves all of them at once while keeping the offsets between them.
 
-Version 1.8.2. Newest download:
+Version 1.10.0. Newest download:
 https://github.com/Kunkles/Kelvin-releases/releases/latest
 
 
@@ -27,9 +27,11 @@ WHAT YOU NEED
 -------------
 
 - A Mac running macOS 14 (Sonoma) or later.
-- ARRI ALEXA cameras on the same network as the Mac, and each camera's
-  IP address (shown in the camera's network settings). Kelvin has
-  been used with the ALEXA 35.
+- ARRI ALEXA or Sony VENICE cameras on the same network as the Mac,
+  and each camera's IP address (shown in the camera's network
+  settings). Kelvin has been used with the ALEXA 35 and the VENICE.
+- For a VENICE, the user name and password for its web remote: the
+  ones a browser asks for at the camera's address.
 
 
 INSTALLING
@@ -128,6 +130,42 @@ All Cameras, which sets every other camera to exactly this camera's
 values as a starting point.
 
 Kelvin moves in 10 K steps and tint in 0.1 CC steps, as on the camera.
+A VENICE takes tint in whole steps, so its card does too.
+
+
+PRESETS
+-------
+
+Presets are white balances you keep in Kelvin, with a name: "Day ext",
+"Tungsten +2 green". They work on any camera.
+
+- To make one: a card's (...) menu > Presets > Save White Balance as
+  Preset..., and give it a name. It keeps that card's kelvin and tint.
+- To use one on a camera: the card's (...) menu > Presets, and pick it.
+- To move the linked cameras to one: the master's (...) menu > Move
+  Linked Cameras to Preset. Their middle goes to the preset and each
+  keeps its offset from the others, as with the master wheel, so a
+  match you made by eye survives. Copy White Balance to All Cameras is
+  still there when you want them identical.
+- To delete one: Presets > Delete Preset.
+
+
+THE CAMERA'S OWN MEMORY
+-----------------------
+
+A VENICE keeps a list of white balances of its own. Its card's (...)
+menu lists them, with their tints, and can add to it:
+
+- Save ... to Camera Memory keeps the white balance the camera is on.
+  The camera only remembers what it is actually set to, so set it
+  first, then save.
+- Delete ... from Camera Memory appears when the camera is on one that
+  was added to it. The camera's built-in ones can't be deleted, and it
+  moves itself to another of its white balances when the one it's on
+  goes, so check the card afterwards.
+
+These are the same memories the camera's own menu and web remote show.
+An ALEXA's list can't be changed from Kelvin yet.
 
 
 LINKING AND THE MASTER WHEEL
@@ -321,6 +359,23 @@ Kelvin forgets what it learned about the last one rather than showing
 you the old camera's EI and ND lists.
 
 
+A SONY VENICE
+-------------
+
+Add a VENICE by its IP address like any other camera. Kelvin notices
+that it isn't an ALEXA -- a VENICE asks for a password an ALEXA never
+does -- and the card says it needs one. Open Camera Settings... on the
+card, and under Kind give the web remote user (usually admin) and
+password. The password is kept in this Mac's keychain. You can also
+choose Sony VENICE there yourself before Kelvin works it out.
+
+A VENICE tells Kelvin about every change the moment it happens, so
+there is no polling. Its card covers 2000 to 15000 K and tint -100 to
++100, the EIs the camera lists and its eight ND filters. The camera
+doesn't check what it's sent -- past +/-100 its tint wraps round to the
+other side -- so Kelvin keeps every change inside what it can really do.
+
+
 SHARING A CAMERA WITH YOUR OTHER TOOLS
 --------------------------------------
 
@@ -405,6 +460,10 @@ EI says "read only", or shows no slider
     reports is still shown, and white balance works as usual. EI can
     be set on the ALEXA 35 for now.
 
+The card says "The camera didn't accept the password"
+  - A VENICE wants its web remote login: Camera Settings... > Kind.
+    It's the user and password a browser asks for at its address.
+
 The ND didn't change
   - Kelvin says so under the camera's name if the camera refuses the
     change or leaves the filter where it is. An internal ND can be
@@ -417,5 +476,5 @@ ABOUT
 Kelvin is free. It is signed with a Developer ID certificate and
 notarised by Apple.
 
-ARRI and ALEXA are trademarks of ARRI. Kelvin is not affiliated with
-or endorsed by ARRI.
+ARRI and ALEXA are trademarks of ARRI. Sony and VENICE are trademarks
+of Sony. Kelvin is not affiliated with or endorsed by either.

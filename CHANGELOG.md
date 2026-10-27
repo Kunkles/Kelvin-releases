@@ -3,6 +3,33 @@
 Kelvin matches white balance and EI across ARRI ALEXA cameras, then
 moves them together. It was called CamMatch until 1.2.0.
 
+## 1.10.0 — 2026-10-27
+
+### Added
+- **Sony VENICE.** Add one by its address like any other camera. Kelvin
+  notices it isn't an ALEXA and asks for its web remote login, which
+  goes in the card's Camera Settings… and is kept in the keychain. The
+  camera tells Kelvin about every change as it happens, so nothing is
+  polled. Its card covers 2000–15000 K, tint ±100 in whole steps, the
+  EIs the camera lists and its ND filters, and Kelvin keeps every
+  change inside those: the camera itself doesn't check, and past ±100
+  its tint wraps round to the other side.
+- **Presets.** Save any card's white balance under a name, kept in
+  Kelvin, and put any camera on it from the card's menu. From the
+  master's menu, Move Linked Cameras to Preset moves their middle to it
+  and keeps each one's offset, so a match made by eye survives.
+- **Camera memory, on a VENICE.** Save the white balance the camera is
+  on to its own memory, and delete ones that were added to it — the
+  same list its menu and web remote show. Its memories apply with
+  their tint, not just the kelvin.
+
+### Fixed
+- **Through noCAP, a camera at exactly 0 tint showed no white balance
+  at all**, and "No ND" whatever its filter was. A tint of 0 was being
+  read as "false".
+- An address that answers but isn't a camera now says so, rather than
+  "The data couldn't be read because it isn't in the correct format".
+
 ## 1.9.1 — 2026-10-26
 
 ### Changed
